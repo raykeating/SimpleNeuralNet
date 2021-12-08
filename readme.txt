@@ -1,6 +1,7 @@
 COSC3P71 Assignment 3
 Name: Ray Keating
 Student Number: 6510200
+Dec 2nd, 2021
 
 Using a Neural Network as a parity bit checking system
 
@@ -36,20 +37,23 @@ The layer sizes can be changed with the layer_sizes tuple
 (Note: the third value, the output layer size, must be 1)
 
 The training_examples variable is a list of decimal integers to be converted 
-into binary.  It represents the binary numbers that will be given to the 
-network as inputs during training.  The training algorithm randomly selects 
-from these training examples.  Similarly, the testing_examples is the same 
-thing, but it represents the inputs that will be given to the network for testing.
+into binary and used to generate inputs and expected ouputs to the network during training. 
 
-The epochs, learning rate, and testing iterations are all pretty self-explanatory.
+The testing_examples is the same thing, but for testing.
+
+The epochs and learning rate are pretty self-explanatory.
 
 -------------------------------------------------------------------------------
                                    Note
 -------------------------------------------------------------------------------
 
-The network performs really well when the training examples are the same as the
-testing examples.  It is able to memorize the training examples with 100% accuracy, 
-in most runs with 10000 epochs.  However, when new examples are added in that it 
-hasn't seen during training, the number of correct guesses can vary widely 
-from run to run.
+As you will see, the network performs poorly on the testing data.  I wasn't able 
+to get it to generalize and I can't figure out why. I believe my backpropagation 
+algorithm is working well, since the mean squared error goes down, and it is able to 
+memorize the training examples with 100% accuracy.  I've tried multiple things to prevent 
+overfitting, including a ton of parameter tweaking, early stoppage, and even a simple 
+"dropout" technique.  Nothing seemed to work though.  
+
+If possible, I would be interested to see the working code released at some point 
+so I could see what I was doing wrong!
 
