@@ -1,9 +1,5 @@
-COSC3P71 Assignment 3
-Name: Ray Keating
-Student Number: 6510200
-Dec 2nd, 2021
-
-Using a Neural Network as a parity bit checking system
+Using a Neural Network as a parity bit checking system - Dec 2nd, 2021
+Brock University COSC3P71
 
 -------------------------------------------------------------------------------
                                   Numpy
