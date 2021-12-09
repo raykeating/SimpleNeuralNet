@@ -45,15 +45,10 @@ The epochs and learning rate are pretty self-explanatory.
 
 -------------------------------------------------------------------------------
                                    Note
--------------------------------------------------------------------------------
-
-As you will see, the network performs poorly on the testing data.  I wasn't able 
-to get it to generalize and I can't figure out why. I believe my backpropagation 
-algorithm is working well, since the mean squared error goes down, and it is able to 
-memorize the training examples with 100% accuracy.  I've tried multiple things to prevent 
-overfitting, including a ton of parameter tweaking, early stoppage, and even a simple 
-"dropout" technique.  Nothing seemed to work though.  
-
-If possible, I would be interested to see the working code released at some point 
-so I could see what I was doing wrong!
+------------------------------------------------------------------------------
+Although the network was able to memorize training examples with 100% accuracy, I 
+wasn't able to get it to generalize to work on new examples (testing_data). I'm not really sure why. 
+I believe my backpropagation algorithm is working well, since the mean squared error goes 
+down epoch-to-epoch.  I've tried multiple things to prevent overfitting, nothing seemed 
+to work though.  Anyways, the general idea is there and it does kind of work.
 
